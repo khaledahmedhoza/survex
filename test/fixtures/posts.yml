@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job-description: MyString
+  task-objective: MyString
+  task-description: MyString
+  actionable-tips: MyString
+  skills: MyString
+  industry-field: MyString
+  experience: MyString
+  cost: MyString
+
+two:
+  job-description: MyString
+  task-objective: MyString
+  task-description: MyString
+  actionable-tips: MyString
+  skills: MyString
+  industry-field: MyString
+  experience: MyString
+  cost: MyString
