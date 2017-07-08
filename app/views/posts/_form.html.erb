@@ -1,0 +1,57 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :job-description %>
+    <%= form.text_field :job-description, id: :post_job-description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :task-objective %>
+    <%= form.text_field :task-objective, id: :post_task-objective %>
+  </div>
+
+  <div class="field">
+    <%= form.label :task-description %>
+    <%= form.text_field :task-description, id: :post_task-description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actionable-tips %>
+    <%= form.text_field :actionable-tips, id: :post_actionable-tips %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skills %>
+    <%= form.text_field :skills, id: :post_skills %>
+  </div>
+
+  <div class="field">
+    <%= form.label :industry-field %>
+    <%= form.text_field :industry-field, id: :post_industry-field %>
+  </div>
+
+  <div class="field">
+    <%= form.label :experience %>
+    <%= form.text_field :experience, id: :post_experience %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.text_field :cost, id: :post_cost %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
